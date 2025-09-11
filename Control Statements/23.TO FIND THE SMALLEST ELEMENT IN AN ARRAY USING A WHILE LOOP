@@ -1,0 +1,14 @@
+#include<stdio.h>
+void main()
+{
+        int i=0,min;
+        int a[9]={2,4,6,8,9,7,5,3,1};
+        min=a[0];
+        while(i<9)
+        {
+                if(min>a[i])
+                        min=a[i];
+                i++
+        }
+        printf("In array minimum = %d\n",min);
+}
