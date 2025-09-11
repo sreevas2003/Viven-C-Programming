@@ -1,0 +1,13 @@
+#include<stdio.h>
+void main()
+{
+        char ch;
+        printf("Enter any alphabet : ");
+        scanf("%c",&ch);
+        if(ch>64 && ch<91)
+                printf("%c is Upper case\n",ch);
+        else if(ch>96 && ch<123)
+                printf("%c is Lower case\n",ch);
+        else
+                printf("%c is Non Alphabet\n",ch);
+}
