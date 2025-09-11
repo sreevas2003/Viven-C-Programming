@@ -1,0 +1,17 @@
+#include<stdio.h>
+void main()
+{
+        int fact=1,i,n;
+        printf("Enter any number : ");
+        scanf("%d",&n);
+        if(n<0)
+                printf("No Factorial for Negative Numbers\n");
+        else
+        {
+                if(n==0)
+                        fact=1;
+                for(i=1;i<=n;i++)
+                        fact*=i;
+                printf("factorial od %d is %d\n",n,fact);
+        }
+} 
