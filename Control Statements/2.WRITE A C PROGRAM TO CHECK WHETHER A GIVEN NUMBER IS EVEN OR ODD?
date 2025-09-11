@@ -1,0 +1,11 @@
+#include<stdio.h>
+void main()
+{
+        int a;
+        printf("Enter any Number : ");
+        scanf("%d",&a);
+        if(a%2==0)
+                printf("%d is a Even\n",a);
+        else
+                printf("%d is a ODD\n",a);
+}
