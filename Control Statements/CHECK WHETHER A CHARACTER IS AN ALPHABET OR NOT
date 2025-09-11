@@ -1,0 +1,12 @@
+#include<stdio.h>
+void main()
+{
+
+        char ch;
+        printf("Enter any element : ");
+        scanf("%c",&ch);
+        if((ch>64 && ch<91) || (ch>96 && ch<123))
+               printf("%c is a Alphabet\n",ch);
+        else
+                printf("%c is a Non Alphabet\n",ch);
+}
