@@ -1,0 +1,12 @@
+//eligible for vote
+#include<stdio.h>
+void main()
+{
+        int age;
+        printf("Enter age of the candidata : ");
+        scanf("%d",&age);
+        if(age>17)
+                printf("candidate is eligible for vote",\n);
+        else
+                printf("candidate is not eligible for vote",\n);
+}
