@@ -1,0 +1,16 @@
+#include<stdio.h>
+void main()
+{
+        int a,b;
+        printf("Enter two Numbers : ");
+        scanf("%d%d",&a,&b);
+        printf("Gcd of %d and %d is : ",a,b);
+        while(a!=b)
+        {
+                if(a>b)
+                        a-=b;
+                if(b>a)
+                        b-=a;
+        }
+        printf("%d\n",a);
+}
