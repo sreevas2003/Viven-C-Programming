@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<string.h>
+char* scat(char*,char*);
 void main()
 {
         char str1[30],str2[15];
