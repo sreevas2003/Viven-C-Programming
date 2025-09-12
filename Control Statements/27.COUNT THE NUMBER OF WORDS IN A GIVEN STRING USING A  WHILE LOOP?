@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+        char str[50]="boya seenu and geetha both are friends";
+        int n=strlen(str);
+        int c=0,j=0;
+        while(str[j]!='\0')
+        {
+                while(str[j]==' ')
+                        j++;
+                while(str[j]!=' ' && j<n)
+                {
+                        putchar(str[j]);
+                        j++;
+                }
+                c++;
+                printf("\n");
+        }
+        printf("count of Words %d\n",c);
+}
