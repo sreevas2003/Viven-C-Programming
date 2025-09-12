@@ -1,0 +1,29 @@
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+        char str1[30],str2[15];
+        printf("Enter two strings : ");
+        gets(str1);
+        gets(str2);
+        int i,l1=strlen(str1);
+        int l2=strlen(str2);
+        scat(str1,str2);
+        /*for(i=0;i<l2;i++)
+                str1[l1++]=str2[i]; */
+        puts(str1);
+        puts(str2);
+}
+char* scat(char* str1,char* str2)
+{
+        char* p=str1;
+        while(*str1!='\0')
+              str++;
+        while(*str1=*str2)
+        {
+              str1++;
+              str2++;
+        }
+        return p;
+}
+
