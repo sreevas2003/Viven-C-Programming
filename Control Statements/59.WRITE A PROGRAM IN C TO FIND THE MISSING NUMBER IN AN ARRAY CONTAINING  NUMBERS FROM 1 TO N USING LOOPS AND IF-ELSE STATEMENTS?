@@ -1,0 +1,23 @@
+#include<stdio.h>
+void main()
+{
+        int n,i;
+        printf("Enter size N : ");
+        scanf("%d",&n);
+        int act_sum,expt_sum;
+        act_sum=expt_sum=0;
+        for(i=1;i<=n;i++)
+                expt_sum+=i;
+        printf("Enter array elements %d : ",n-1);
+        int a[n-1];
+        for(i=0;i<n-1;i++)
+        {
+                scanf("%d",&a[i]);
+                act_sum+=a[i];
+        }
+        int mis=expt_sum-act_sum;
+        if(mis>0 && mis<n)
+                printf("Missing Number is : %d\n",mis);
+        else
+                printf("Not find\n");
+}
