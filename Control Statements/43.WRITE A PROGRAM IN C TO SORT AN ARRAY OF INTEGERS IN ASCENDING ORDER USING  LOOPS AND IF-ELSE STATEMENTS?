@@ -1,0 +1,21 @@
+#include<stdio.h>
+void main()
+{
+        int a[8]={8,75,96,25,15,45,36,69};
+        int i,j,temp;
+        for(i=0;i<8;i++)
+        {
+                for(j=i;j<8;j++)
+                {
+                        if(a[i]>a[j])
+                        {
+                                temp=a[i];
+                                a[i]=a[j];
+                                a[j]=temp;
+                        }
+                }
+        }
+        for(i=0;i<8;i++)
+                printf("%d ",a[i]);
+        printf("\n");
+}
