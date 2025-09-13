@@ -1,0 +1,26 @@
+//remove duplicate elements
+#include<stdio.h>
+void main()
+{
+        int a[10]={8,1,3,9,4,5,8,3,5,4};
+        int du,uni=0,i,j,temp[10];
+        for(i=0;i<10;i++)
+        {
+                du=0;
+                for(j=0;j<uni;j++)
+                {
+                        if(a[i]==a[j])
+                        {
+                                du=1;
+                                break;
+                        }
+                }
+                if(!du)
+                        temp[uni++]=a[i];
+
+        }
+        for(i=0;i<uni;i++)
+                a[i]=temp[i];
+        for(i=0;i<uni;i++)
+                printf("%d ",a[i]);
+}
