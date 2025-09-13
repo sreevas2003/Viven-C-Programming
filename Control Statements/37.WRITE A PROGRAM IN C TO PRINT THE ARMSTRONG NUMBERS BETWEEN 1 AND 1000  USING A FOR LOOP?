@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<math.h>
+void main()
+{
+        int i,res,n,r,c;
+        printf("Armstrong numbers 1 to 1000 are : ");
+        for(i=1;i<1000;i++)
+        {
+                c=0;
+                n=i;
+                while(n)
+                {
+                        c++;
+                        n/=10;
+                }
+                n=i;
+                res=0;
+                while(n)
+                {
+                        r=n%10;
+                        res+=pow(r,c);
+                        n/=10;
+                }
+                if(i==res)
+                        printf("%d ",i);
+        }
+        printf("\n");
+}
