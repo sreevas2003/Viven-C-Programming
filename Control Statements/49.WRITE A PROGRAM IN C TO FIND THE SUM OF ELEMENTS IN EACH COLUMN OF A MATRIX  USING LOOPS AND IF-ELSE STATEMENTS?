@@ -1,0 +1,15 @@
+#include<stdio.h>
+void main()
+{
+        int a[3][3]={2,4,6,8,9,7,5,3,1};
+        int i,j,sum;
+        for(i=0;i<3;i++)
+        {
+                sum=0;
+                for(j=0;j<3;j++)
+                {
+                        sum+=a[j][i];
+                }
+                printf("%d column sum is %d\n",i+1,sum);
+        }
+}
