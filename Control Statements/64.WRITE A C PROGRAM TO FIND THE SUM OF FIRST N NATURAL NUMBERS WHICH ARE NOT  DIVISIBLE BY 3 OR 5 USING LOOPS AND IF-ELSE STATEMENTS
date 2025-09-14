@@ -1,0 +1,15 @@
+#include<stdio.h>
+void main()
+{
+        int i,sum=0,n;
+        printf("Enter N value : ");
+        scanf("%d",&n);
+        for(i=1;i<=n;i++)
+        {
+                if(i%3==0 || i%5==0)
+                        continue;
+                else
+                        sum+=i;
+        }
+        printf("Without 3 or 5 divisible\n1 to %d of Sum is %d\n",n,sum);
+}
