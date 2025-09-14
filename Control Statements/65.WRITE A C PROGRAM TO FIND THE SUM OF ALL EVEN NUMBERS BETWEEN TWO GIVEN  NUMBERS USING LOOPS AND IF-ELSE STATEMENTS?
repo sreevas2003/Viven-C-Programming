@@ -1,0 +1,13 @@
+#include<stdio.h>
+void main()
+{
+        int i,sum=0,n;
+        printf("Enter N value : ");
+        scanf("%d",&n);
+        for(i=1;i<=n;i++)
+        {
+                if(i%2==0)
+                        sum+=i;
+        }
+        printf("Sum of even numbers b/w 1 to %d is : %d\n",n,sum);
+}
