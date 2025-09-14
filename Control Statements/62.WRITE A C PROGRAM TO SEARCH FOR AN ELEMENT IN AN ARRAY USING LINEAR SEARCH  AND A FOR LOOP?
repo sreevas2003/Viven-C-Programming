@@ -1,0 +1,18 @@
+#include<stdio.h>
+void main()
+{
+        int a[10]={1,4,5,2,7,9,0,8,6,3};
+        int i,se;
+        for(i=0;i<10;i++)
+                printf("%d ",a[i]);
+        printf("Enter search element : ");
+        scanf("%d",&se);
+        for(i=0;i<10;i++)
+        {
+                if(se==a[i])
+                {
+                        printf("Element found at %d index\n",i);
+                        break;
+                }
+        }
+}
