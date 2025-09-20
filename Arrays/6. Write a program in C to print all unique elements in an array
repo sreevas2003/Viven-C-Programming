@@ -1,0 +1,32 @@
+//unique elements
+#include<stdio.h>
+void main()
+{
+        int i,c,k=0,j,temp[8],a[8],b[8];
+        printf("Enter 8 elements of array : ");
+        for(i=0;i<8;i++)
+                scanf("%d",&a[i]);
+        i=0;
+        while(i<8)
+                temp[i++]=-1;
+        for(i=0;i<8;i++)
+        {
+                if(temp[i]==-1)
+                {
+                        c=0;
+                        for(j=i+1;j<8;j++)
+                        {
+                                if(a[i]==a[j])
+                                {
+                                        c++;
+                                        temp[j]=0;
+                                }
+                        }
+                        if(c==0)
+                                b[k++]=a[i];
+                }
+        }
+        for(i=0;i<k;i++)
+                printf("%d ",b[i]);
+        printf("\n");
+}
