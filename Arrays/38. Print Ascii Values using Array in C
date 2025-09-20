@@ -1,0 +1,9 @@
+#include<stdio.h>
+void main()
+{
+        char str[]="sreenivasulu";
+
+        int i;
+        for(i=0;str[i]!='\0';i++)
+                printf("%c ascii value is %d\n",str[i],str[i]);
+}
