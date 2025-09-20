@@ -1,0 +1,9 @@
+//area of rectangle
+#include<stdio.h>
+void main()
+{
+        float l,b;
+        printf("Enter length and breadth : ");
+        scanf("%f%f",&l,&b);
+        printf("area of rectangle is : %f\n",l*b);
+}
