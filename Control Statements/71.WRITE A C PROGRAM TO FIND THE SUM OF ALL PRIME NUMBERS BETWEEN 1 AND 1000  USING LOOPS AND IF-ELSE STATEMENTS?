@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<math.h>
+void main()
+{
+        int i,j,flag,sum=0;
+        printf("1 to 1000 Prime Numbers : ");
+        for(i=1;i<=1000;i++)
+        {
+                flag=0;
+                for(j=2;j<sqrt(i);j++)
+                {
+                        if(i%j==0)
+                        {
+                                flag=1;
+                                break;
+                        }
+                }
+                if(flag==0)
+                {
+                        sum+=i;
+                        printf("%d ",i);
+                }
+        }
+        printf("\n1 to 1000 prime number sum is : %d\n",sum);
+}
