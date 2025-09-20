@@ -1,0 +1,12 @@
+
+//power of a num using for loop
+#include<stdio.h>
+void main()
+{
+        int i,res=1,base,power;
+        printf("Enter base and power : ");
+        scanf("%d%d",&base,&power);
+        for(i=1;i<=power;i++)
+                res*=base;
+        printf("%d power of %d is %d\n",base,power,res);
+}
