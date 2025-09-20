@@ -1,0 +1,15 @@
+#include<stdio.h>
+void main()
+{
+        char ch;
+        printf("Enter any character : ");
+        scanf("%c",&ch);
+        int a;
+        if(ch>64 && ch<91)
+                a=ch;
+        else if (ch>96 && ch<123)
+                a=ch;
+        else
+                printf("Invalid character\n");
+        printf("Ascii value is : %d\n",a);
+}
