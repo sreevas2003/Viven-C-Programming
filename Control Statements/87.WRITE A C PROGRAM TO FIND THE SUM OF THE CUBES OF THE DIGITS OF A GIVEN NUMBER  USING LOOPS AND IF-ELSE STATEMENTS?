@@ -1,0 +1,17 @@
+//sum of the cubes of the digits of numbers
+#include<stdio.h>
+#include<math.h>
+void main()
+{
+        int n,num,r,sum=0;
+        printf("Enter a number : ");
+        scanf("%d",&num);
+        n=num;
+        while(n)
+        {
+                r=n%10;
+                sum=sum+pow(r,3);
+                n/=10;
+        }
+        printf("%d of digits of cubes sum is %d\n",num,sum);
+}
