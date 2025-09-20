@@ -1,0 +1,19 @@
+//sum of even digits and sum of odd digits of given number
+#include<stdio.h>
+void main()
+{
+        int n,r,num,esum=0,osum=0;
+        printf("Enter a number : ");
+        scanf("%d",&num);
+        n=num;
+        while(n)
+        {
+                r=n%10;
+                if(r%2==0)
+                        esum+=r;
+                else
+                        osum+=r;
+                n/=10;
+        }
+        printf("%d number of even sum is : %d\tOdd sum is : %d\n",num,esum,osum);
+}
