@@ -1,0 +1,15 @@
+#include<stdio.h>
+void main()
+{
+        char name[10];
+        printf("Enter String : ");
+        gets(name);
+        int i=0;
+        while(name[i]!='\0')
+        {
+                putchar(name[i]);
+                printf("\t");
+                i++;
+        }
+        printf("\n");
+}
