@@ -1,0 +1,22 @@
+#include<stdio.h>
+int cmp(char* s1,char* s2);
+void main()
+{
+        char str1[10],str2[10];
+        printf("Enter two strings : ");
+        scanf("%s",str1);
+        scanf("%s",str2);
+        if(cmp(str1,str2)==0)
+                printf("Both are same\n");
+        else
+                printf("Both are different\n");
+}
+int cmp(char* s1,char* s2)
+{
+        while(*s1 && *s2 && *s1==*s2)
+        {
+                s1++;
+                s2++;
+        }
+        return *s1-*s2;
+}
